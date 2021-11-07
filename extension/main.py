@@ -12,18 +12,33 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-email = "test@gmail.com"
+server_url = ""
+
+email = "castrojv@bc.edu"
 user = db.collection("users").where("email", "==", email).get()
 assert len(user) == 1
 user = user[0]
 
-docs1 = user.collection("docs").stream()
-# doc2 = user.collection("photos").document("")
+requests.post(server_url, verify=False, json={"user_hash":user.id})
+
+docs1 = user.reference.collection("docs").stream()
+docs2 = user.reference.collection("photos").stream()
 
 info = []
 print(docs1)
 for doc in docs1:
     new_words = doc.get('word')
+    if len(new_words) > 0:
+        info.append(new_words)
+        print(info)
+
+for doc2 in docs2:
+    new_words = ''
+
+    output = doc2.reference.collection('boxedCoords').stream()
+
+    for thing in output:
+        new_words = thing.get('word')
     if len(new_words) > 0:
         info.append(new_words)
         print(info)
@@ -39,7 +54,7 @@ for word in eng_word_list:
     word = word.lower().strip()
     try:
         r2 = requests.get("https://www.dictionaryapi.com/api/v3/references/spanish/json/" + str(
-            word) + "?key=")
+            word) + "?")
         r2 = r2.json()
         start_of_parse = r2[0]['def'][0]['sseq'][0][0][1]['dt'][0][1]
         span_translation = start_of_parse.split('|')
