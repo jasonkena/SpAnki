@@ -12,7 +12,11 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-user = db.collection("users").document("507CnFJFHUOe4BOMthxnVzwo5IG3")
+email = "test@gmail.com"
+user = db.collection("users").where("email", "==", email).get()
+assert len(user) == 1
+user = user[0]
+
 docs1 = user.collection("docs").stream()
 # doc2 = user.collection("photos").document("")
 
