@@ -7,12 +7,12 @@ from firebase_admin import firestore
 
 # Use the application default credentials
 # Use the application default credentials
-cred = credentials.Certificate('')
+cred = credentials.Certificate('spanki-ffa20-0dead8032e4e.json')
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-server_url = ""
+server_url = "https://cscigpu06:5000/api/ocr/get_ocr"
 
 email = "castrojv@bc.edu"
 user = db.collection("users").where("email", "==", email).get()
@@ -30,7 +30,6 @@ for doc in docs1:
     new_words = doc.get('word')
     if len(new_words) > 0:
         info.append(new_words)
-        print(info)
 
 for doc2 in docs2:
     new_words = ''
@@ -41,20 +40,21 @@ for doc2 in docs2:
         new_words = thing.get('word')
     if len(new_words) > 0:
         info.append(new_words)
-        print(info)
+
+print(info)
 
 eng_word_list = info
 surviving_eng_words = []
 definition_output_list = []
 span_output_list = []
-app_id = ""
-app_key = ""
+app_id = "00eb2bd8"
+app_key = "43381026cf2350ae207f2ccd9eac996d"
 
 for word in eng_word_list:
     word = word.lower().strip()
     try:
         r2 = requests.get("https://www.dictionaryapi.com/api/v3/references/spanish/json/" + str(
-            word) + "?")
+            word) + "?key=3a2c8c02-e1e7-40f8-b3d7-bb85c8f7dbb7")
         r2 = r2.json()
         start_of_parse = r2[0]['def'][0]['sseq'][0][0][1]['dt'][0][1]
         span_translation = start_of_parse.split('|')
@@ -84,9 +84,9 @@ for word in eng_word_list:
         definition = r['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0]
         definition_output_list.append(definition)
 
-        surviving_eng_words.append(word)
     except:
-        continue
+        definition_output_list.append("definition not found")
+    surviving_eng_words.append(word)
 
 
 def request(action, **params):
