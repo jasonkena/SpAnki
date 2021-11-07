@@ -15,7 +15,11 @@ def add_word(word, email):
     collections = list(user[0].reference.collections())
     docs = [collection for collection in collections if collection.id == "docs"]
 
-    assert len(docs) == 1
-    docs[0].document(word).set(data)
+    if len(docs) == 0:
+        docs = user[0].reference.collection("docs")
+    else:
+        docs = docs[0]
+
+    docs.document(word).set(data)
 
     return {"text": "success"}
