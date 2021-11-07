@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0239ABF27380F6400276745 /* BoxedCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0239ABE27380F6400276745 /* BoxedCoord.swift */; };
+		A0239AC12738321F00276745 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0239AC02738321F00276745 /* WordTableViewCell.swift */; };
+		A079DCD22736F076002FC6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCD12736F076002FC6AE /* AppDelegate.swift */; };
+		A079DCD42736F077002FC6AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCD32736F077002FC6AE /* SceneDelegate.swift */; };
+		A079DCD62736F077002FC6AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCD52736F077002FC6AE /* LoginViewController.swift */; };
+		A079DCD92736F077002FC6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079DCD72736F077002FC6AE /* Main.storyboard */; };
+		A079DCDB2736F078002FC6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A079DCDA2736F078002FC6AE /* Assets.xcassets */; };
+		A079DCDE2736F078002FC6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A079DCDC2736F078002FC6AE /* LaunchScreen.storyboard */; };
+		A079DCE92736FA3D002FC6AE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCE82736FA3D002FC6AE /* CameraViewController.swift */; };
+		A079DCEC27370E05002FC6AE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCEB27370E05002FC6AE /* Photo.swift */; };
+		A079DCEE27371AFD002FC6AE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCED27371AFD002FC6AE /* PhotoViewController.swift */; };
+		A079DCF127371DBB002FC6AE /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCF027371DBB002FC6AE /* PhotoCollectionViewController.swift */; };
+		A079DCF327371DE4002FC6AE /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCF227371DE4002FC6AE /* PhotoCollectionViewCell.swift */; };
+		A079DCF527372959002FC6AE /* spankiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCF427372959002FC6AE /* spankiUser.swift */; };
+		A079DCF7273729DE002FC6AE /* spankiUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCF6273729DE002FC6AE /* spankiUsers.swift */; };
+		A079DCF927373FC9002FC6AE /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079DCF827373FC9002FC6AE /* Photos.swift */; };
+		A0B34AFF273781E400712A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B34AFE273781E400712A17 /* GoogleService-Info.plist */; };
+		A0B34B012737854600712A17 /* PhotoCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B34B002737854600712A17 /* PhotoCropViewController.swift */; };
+		C6BB5919122DF767D10BBFCB /* Pods_spanki_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E992B31E78441DADA48864F2 /* Pods_spanki_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F1912F478F92048FBCB850B /* Pods-spanki-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spanki-app.debug.xcconfig"; path = "Target Support Files/Pods-spanki-app/Pods-spanki-app.debug.xcconfig"; sourceTree = "<group>"; };
+		A0239ABE27380F6400276745 /* BoxedCoord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxedCoord.swift; sourceTree = "<group>"; };
+		A0239AC02738321F00276745 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		A079DCCE2736F076002FC6AE /* spanki-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spanki-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079DCD12736F076002FC6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A079DCD32736F077002FC6AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A079DCD52736F077002FC6AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A079DCD82736F077002FC6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A079DCDA2736F078002FC6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A079DCDD2736F078002FC6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A079DCDF2736F078002FC6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A079DCE82736FA3D002FC6AE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A079DCEB27370E05002FC6AE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		A079DCED27371AFD002FC6AE /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A079DCF027371DBB002FC6AE /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		A079DCF227371DE4002FC6AE /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A079DCF427372959002FC6AE /* spankiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spankiUser.swift; sourceTree = "<group>"; };
+		A079DCF6273729DE002FC6AE /* spankiUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spankiUsers.swift; sourceTree = "<group>"; };
+		A079DCF827373FC9002FC6AE /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		A0B34AFE273781E400712A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0B34B002737854600712A17 /* PhotoCropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropViewController.swift; sourceTree = "<group>"; };
+		D3FED0538C0E0554AA74F294 /* Pods-spanki-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spanki-app.release.xcconfig"; path = "Target Support Files/Pods-spanki-app/Pods-spanki-app.release.xcconfig"; sourceTree = "<group>"; };
+		E992B31E78441DADA48864F2 /* Pods_spanki_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spanki_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A079DCCB2736F076002FC6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BB5919122DF767D10BBFCB /* Pods_spanki_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F131FBC19E9936A65B835ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E992B31E78441DADA48864F2 /* Pods_spanki_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E31F43ED05B184CC41E89A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F1912F478F92048FBCB850B /* Pods-spanki-app.debug.xcconfig */,
+				D3FED0538C0E0554AA74F294 /* Pods-spanki-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A079DCC52736F076002FC6AE = {
+			isa = PBXGroup;
+			children = (
+				A079DCD02736F076002FC6AE /* spanki-app */,
+				A079DCCF2736F076002FC6AE /* Products */,
+				8E31F43ED05B184CC41E89A4 /* Pods */,
+				0F131FBC19E9936A65B835ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A079DCCF2736F076002FC6AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A079DCCE2736F076002FC6AE /* spanki-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A079DCD02736F076002FC6AE /* spanki-app */ = {
+			isa = PBXGroup;
+			children = (
+				A079DCD12736F076002FC6AE /* AppDelegate.swift */,
+				A079DCD32736F077002FC6AE /* SceneDelegate.swift */,
+				A079DCEA27370DF4002FC6AE /* Models */,
+				A079DCEF27371D88002FC6AE /* Views */,
+				A079DCE72736F3F0002FC6AE /* Controllers */,
+				A079DCD72736F077002FC6AE /* Main.storyboard */,
+				A079DCDA2736F078002FC6AE /* Assets.xcassets */,
+				A079DCDC2736F078002FC6AE /* LaunchScreen.storyboard */,
+				A0B34AFE273781E400712A17 /* GoogleService-Info.plist */,
+				A079DCDF2736F078002FC6AE /* Info.plist */,
+			);
+			path = "spanki-app";
+			sourceTree = "<group>";
+		};
+		A079DCE72736F3F0002FC6AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A079DCD52736F077002FC6AE /* LoginViewController.swift */,
+				A079DCF027371DBB002FC6AE /* PhotoCollectionViewController.swift */,
+				A079DCE82736FA3D002FC6AE /* CameraViewController.swift */,
+				A079DCED27371AFD002FC6AE /* PhotoViewController.swift */,
+				A0B34B002737854600712A17 /* PhotoCropViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A079DCEA27370DF4002FC6AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A079DCEB27370E05002FC6AE /* Photo.swift */,
+				A079DCF827373FC9002FC6AE /* Photos.swift */,
+				A079DCF427372959002FC6AE /* spankiUser.swift */,
+				A079DCF6273729DE002FC6AE /* spankiUsers.swift */,
+				A0239ABE27380F6400276745 /* BoxedCoord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A079DCEF27371D88002FC6AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A079DCF227371DE4002FC6AE /* PhotoCollectionViewCell.swift */,
+				A0239AC02738321F00276745 /* WordTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A079DCCD2736F076002FC6AE /* spanki-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A079DCE22736F078002FC6AE /* Build configuration list for PBXNativeTarget "spanki-app" */;
+			buildPhases = (
+				C4657D2C062E2E6A59E488AE /* [CP] Check Pods Manifest.lock */,
+				A079DCCA2736F076002FC6AE /* Sources */,
+				A079DCCB2736F076002FC6AE /* Frameworks */,
+				A079DCCC2736F076002FC6AE /* Resources */,
+				585C3A5A3D118143CEF85033 /* [CP] Embed Pods Frameworks */,
+				D401649A282857503028EF21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spanki-app";
+			productName = "spanki-app";
+			productReference = A079DCCE2736F076002FC6AE /* spanki-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A079DCC62736F076002FC6AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A079DCCD2736F076002FC6AE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = A079DCC92736F076002FC6AE /* Build configuration list for PBXProject "spanki-app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A079DCC52736F076002FC6AE;
+			productRefGroup = A079DCCF2736F076002FC6AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A079DCCD2736F076002FC6AE /* spanki-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A079DCCC2736F076002FC6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079DCDE2736F078002FC6AE /* LaunchScreen.storyboard in Resources */,
+				A079DCDB2736F078002FC6AE /* Assets.xcassets in Resources */,
+				A079DCD92736F077002FC6AE /* Main.storyboard in Resources */,
+				A0B34AFF273781E400712A17 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		585C3A5A3D118143CEF85033 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4657D2C062E2E6A59E488AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spanki-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D401649A282857503028EF21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spanki-app/Pods-spanki-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A079DCCA2736F076002FC6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A079DCD62736F077002FC6AE /* LoginViewController.swift in Sources */,
+				A079DCF327371DE4002FC6AE /* PhotoCollectionViewCell.swift in Sources */,
+				A079DCE92736FA3D002FC6AE /* CameraViewController.swift in Sources */,
+				A079DCF127371DBB002FC6AE /* PhotoCollectionViewController.swift in Sources */,
+				A079DCD22736F076002FC6AE /* AppDelegate.swift in Sources */,
+				A0B34B012737854600712A17 /* PhotoCropViewController.swift in Sources */,
+				A079DCF927373FC9002FC6AE /* Photos.swift in Sources */,
+				A079DCD42736F077002FC6AE /* SceneDelegate.swift in Sources */,
+				A079DCF7273729DE002FC6AE /* spankiUsers.swift in Sources */,
+				A0239ABF27380F6400276745 /* BoxedCoord.swift in Sources */,
+				A079DCF527372959002FC6AE /* spankiUser.swift in Sources */,
+				A0239AC12738321F00276745 /* WordTableViewCell.swift in Sources */,
+				A079DCEC27370E05002FC6AE /* Photo.swift in Sources */,
+				A079DCEE27371AFD002FC6AE /* PhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A079DCD72736F077002FC6AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A079DCD82736F077002FC6AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A079DCDC2736F078002FC6AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A079DCDD2736F078002FC6AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A079DCE02736F078002FC6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A079DCE12736F078002FC6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A079DCE32736F078002FC6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1912F478F92048FBCB850B /* Pods-spanki-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T27UL2R63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spanki-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spanki will need access to your camera in order to take pictures.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juliansproject.spanki-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A079DCE42736F078002FC6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FED0538C0E0554AA74F294 /* Pods-spanki-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8T27UL2R63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spanki-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Spanki will need access to your camera in order to take pictures.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juliansproject.spanki-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A079DCC92736F076002FC6AE /* Build configuration list for PBXProject "spanki-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079DCE02736F078002FC6AE /* Debug */,
+				A079DCE12736F078002FC6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A079DCE22736F078002FC6AE /* Build configuration list for PBXNativeTarget "spanki-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A079DCE32736F078002FC6AE /* Debug */,
+				A079DCE42736F078002FC6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A079DCC62736F076002FC6AE /* Project object */;
+}
